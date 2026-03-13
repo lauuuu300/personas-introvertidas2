@@ -2,75 +2,125 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Personas Introvertidas</title>
+<title>El mundo interior - Introvertidos</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:linear-gradient(180deg,#0f172a,#1e293b);
-color:white;
-line-height:1.7;
+font-family:Arial, Helvetica, sans-serif;
+background:#e7e5e4;
+color:#333;
 }
 
-header{
-text-align:center;
-padding:60px 20px;
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor{
 max-width:900px;
 margin:auto;
+background:#f5f5f4;
+padding-bottom:40px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+
+header{
+background:#6b7c8f;
+color:white;
+text-align:center;
+padding:60px 20px;
 }
 
 header h1{
-font-size:42px;
+margin:0;
+font-size:40px;
 }
 
-.texto-principal{
-max-width:900px;
+header p{
+opacity:0.9;
+}
+
+/* SECCION TEXTO */
+
+.intro{
+padding:40px;
+text-align:center;
+}
+
+.intro h2{
+margin-bottom:10px;
+}
+
+.intro p{
+max-width:650px;
 margin:auto;
-padding:20px;
+line-height:1.6;
 }
 
-.caracteristicas{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
+/* TARJETAS */
+
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
 }
 
-.seccion{
-display:flex;
-align-items:center;
-gap:30px;
-margin-bottom:50px;
-}
-
-.seccion:nth-child(even){
-flex-direction:row-reverse;
-}
-
-.seccion img{
-width:250px;
-height:200px;
-object-fit:cover;
-border-radius:15px;
-}
-
-.seccion video{
-width:250px;
-height:200px;
-object-fit:cover;
-border-radius:15px;
-}
-
-.texto{
-background:#1e293b;
+.card{
+background:white;
 padding:20px;
 border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
 }
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* SECCION TRABAJO */
+
+.trabajo{
+padding:40px;
+}
+
+.trabajo h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.trabajo p{
+max-width:700px;
+margin:auto;
+text-align:center;
+line-height:1.6;
+}
+
+/* VIDEO */
+
+.video{
+padding:40px;
+text-align:center;
+}
+
+.video video{
+width:100%;
+max-width:600px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;
-padding:40px;
+padding:20px;
+font-size:14px;
 opacity:0.7;
 }
 
@@ -79,165 +129,125 @@ opacity:0.7;
 
 <body>
 
+<div class="contenedor">
+
 <header>
-<h1>Personas Introvertidas</h1>
+
+<h1>El Mundo Interior</h1>
+<p>Comprendiendo a las personas introvertidas</p>
+
 </header>
 
 
-<div class="texto-principal">
+<!-- TEXTO DE LA IMAGEN QUE PEDISTE -->
+
+<section style="background:linear-gradient(180deg,#0f172a,#8eb7fa); color:white; padding:60px 40px;">
 
 <h2>¿Qué es ser una persona introvertida?</h2>
 
 <p>
-Ser una persona introvertida es una característica de la personalidad. Las personas introvertidas suelen sentirse más cómodas en ambientes tranquilos y calmados. Les gusta tener tiempo para pensar, reflexionar y analizar las cosas antes de hablar o actuar.
-Ser introvertido no significa ser antisocial o que no les guste hablar con los demás. Simplemente su forma de relacionarse con el mundo es más tranquila y reflexiva.
+Ser una persona introvertida es una característica de la personalidad. Las personas introvertidas suelen sentirse más cómodas en ambientes tranquilos y calmados. Les gusta tener tiempo para pensar, reflexionar y analizar las cosas antes de hablar o actuar. Ser introvertido no significa ser antisocial o que no les guste hablar con los demás. Simplemente su forma de relacionarse con el mundo es más tranquila y reflexiva.
 </p>
 
 <h2>¿En qué abarca la introversión?</h2>
 
 <p>
-La introversión abarca la manera en que una persona piensa, se comporta y se relaciona con los demás. Incluye aspectos como la forma de socializar, la preferencia por ambientes tranquilos y la manera de reflexionar antes de hablar o actuar.
-También abarca el tipo de relaciones personales que prefieren y las actividades que disfrutan realizar en su tiempo libre.
+La introversión abarca la manera en que una persona piensa, se comporta y se relaciona con los demás. Incluye aspectos como la forma de socializar, la preferencia por ambientes tranquilos y la manera de reflexionar antes de hablar o actuar. También abarca el tipo de relaciones personales que prefieren y las actividades que disfrutan realizar en su tiempo libre.
 </p>
 
 <h2>¿Cómo abarca esto en un grupo de trabajo?</h2>
 
 <p>
-En un grupo de trabajo, las personas introvertidas pueden aportar muchas cosas importantes. Generalmente son personas que observan bien lo que ocurre a su alrededor y analizan las situaciones antes de dar su opinión.
-Esto puede ayudar a que el grupo tome decisiones más pensadas y organizadas.
+En un grupo de trabajo, las personas introvertidas pueden aportar muchas cosas importantes. Generalmente son personas que observan bien lo que ocurre a su alrededor y analizan las situaciones antes de dar su opinión. Esto puede ayudar a que el grupo tome decisiones más pensadas y organizadas.
 </p>
 
 <p>
-Además, las personas introvertidas suelen ser muy buenas escuchando a los demás. Esto permite que dentro del grupo haya más respeto y comprensión entre los compañeros.
-También pueden aportar ideas creativas o soluciones a problemas porque suelen reflexionar bastante antes de hablar.
+Además, las personas introvertidas suelen ser muy buenas escuchando a los demás. Esto permite que dentro del grupo haya más respeto y comprensión entre los compañeros. También pueden aportar ideas creativas o soluciones a problemas porque suelen reflexionar bastante antes de hablar.
 </p>
 
-</div>
+</section>
 
 
-<div class="caracteristicas">
 
-<div class="seccion">
+
+
+
+
+
+
+<section class="tarjetas">
+
+<div class="card">
 <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<div class="texto">
-<h3>Preferimos lugares tranquilos</h3>
-<p>
-Las personas introvertidas suelen sentirse más cómodas en ambientes calmados. Los lugares con mucho ruido o con muchas personas pueden hacer que se sientan cansadas más rápido.
-</p>
-</div>
+<h3>Lugares tranquilos</h3>
+<p>Los introvertidos se sienten más cómodos en ambientes calmados.</p>
 </div>
 
-<div class="seccion">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
-<div class="texto">
-<h3>Disfrutamos el tiempo a solas</h3>
-<p>
-A los introvertidos les gusta tener momentos para estar solos, lo que les ayuda a descansar, pensar y organizar sus ideas.
-</p>
-</div>
+<h3>Tiempo a solas</h3>
+<p>Disfrutan momentos solos para pensar y descansar.</p>
 </div>
 
-<div class="seccion">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<div class="texto">
-<h3>Somos muy observadores</h3>
-<p>
-Muchas veces prefieren observar antes de hablar, lo que les permite notar detalles que otras personas pueden no ver.
-</p>
-</div>
+<h3>Observadores</h3>
+<p>Tienden a observar antes de hablar.</p>
 </div>
 
-<div class="seccion">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570">
-<div class="texto">
-<h3>Preferimos pocas amistades, pero profundas</h3>
-<p>
-Los introvertidos suelen valorar más la calidad de las amistades que la cantidad, prefiriendo relaciones cercanas y sinceras.
-</p>
-</div>
+<h3>Amistades profundas</h3>
+<p>Prefieren pocas amistades pero muy cercanas.</p>
 </div>
 
-<div class="seccion">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<div class="texto">
-<h3>Somos buenos escuchando</h3>
-<p>
-Las personas introvertidas suelen prestar mucha atención cuando alguien habla, lo que les permite comprender mejor a los demás.
-</p>
-</div>
+<h3>Buenos oyentes</h3>
+<p>Escuchan con atención a las personas.</p>
 </div>
 
-<div class="seccion">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc">
-<div class="texto">
-<h3>Tenemos gran imaginación y creatividad</h3>
+<h3>Creatividad</h3>
+<p>Suelen tener ideas creativas gracias a su reflexión.</p>
+</div>
+
+</section>
+
+
+<section class="trabajo">
+
+<h2>Introvertidos en un grupo de trabajo</h2>
+
 <p>
-Al pasar tiempo reflexionando, muchas personas introvertidas desarrollan ideas nuevas y soluciones creativas.
+Dentro de un equipo de trabajo, las personas introvertidas pueden aportar observación, análisis y soluciones bien pensadas.
+Muchas veces escuchan a todos antes de opinar, lo que ayuda a tomar decisiones más organizadas.
+También pueden aportar ideas creativas y trabajar con mucha concentración.
 </p>
-</div>
-</div>
 
-<div class="seccion">
-<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
-<div class="texto">
-<h3>Pensamos antes de hablar</h3>
-<p>
-Los introvertidos suelen analizar lo que quieren decir antes de expresarlo, por lo que sus comentarios suelen ser más reflexivos.
-</p>
-</div>
-</div>
+</section>
 
-<div class="seccion">
-<img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6">
-<div class="texto">
-<h3>Reflexionamos profundamente</h3>
-<p>
-Las personas introvertidas piensan mucho sobre las situaciones y emociones, lo que les ayuda a comprender mejor a las personas y sus experiencias.
-</p>
-</div>
-</div>
 
-<div class="seccion">
-<img src="https://images.unsplash.com/photo-1556155092-490a1ba16284">
-<div class="texto">
-<h3>Somos buenos trabajando de forma independiente</h3>
-<p>
-Las personas introvertidas suelen sentirse cómodas trabajando solas o en tareas que requieren concentración. Esto les permite enfocarse mejor, analizar los detalles y completar sus actividades con cuidado y responsabilidad.
-</p>
-</div>
-</div>
+<section class="video">
 
-<!-- VIDEO CON RESUMEN -->
-
-<div class="seccion">
+<h2>Video Explicativo</h2>
 
 <video controls>
 <source src="videoplayback (1).mp4" type="video/mp4">
-Tu navegador no soporta video.
+Tu navegador no soporta video
 </video>
 
-<div class="texto">
-
-<h3>Resumen del video</h3>
-
-<p>
-El video explica que las personas introvertidas suelen sentirse más cómodas en ambientes tranquilos y prefieren momentos de reflexión antes de hablar o actuar.
-</p>
-
-<p>
-También muestra que ser introvertido no significa ser antisocial. Simplemente tienen una forma más tranquila de relacionarse con los demás y pueden aportar ideas valiosas porque observan, escuchan y analizan antes de opinar.
-</p>
-
-</div>
-
-</div>
-
-</div>
+</section>
 
 
 <footer>
+
 Presentación sobre las características de las personas introvertidas
+
 </footer>
+
+</div>
 
 </body>
 </html>
